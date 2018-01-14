@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cezares</title>
+
+<!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="images/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+<!-- // favicon -->
+
+  <link rel="stylesheet" href="css/reset.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/responsive.min.css" />
+</head>
+<body>
+    <div id="main">
+      <div class="mobileMenu" id="mobileMenu">
+        <div class="mobileMenu__overlay"></div>
+        <div class="menuInner closed">
+          <div class="menuInnerHead">
+            <div class="logo_box">
+              <a href="/" class="logo">
+                <img src="images/logo_menu.jpg" alt="logo" class="logo__miniImg" />
+                <span class="logo__domain">-pro.ru</span>
+              </a>
+            </div>
+            <button type="button" class="closeMenu" id="closeMenu">
+              <span class="divider divider-left"></span>
+              <span class="divider divider-right"></span>
+            </button>
+            <div class="menu_button_set">
+              <button type="button" id="wishlist" class="green_btn green_btn-menu" data-title="Желания">
+                <svg class="icon">
+                  <use class="icon__body" xlink:href="images/sprites/sprite.svg#wish_icon-01" />
+                </svg>
+              </button>
+              <button type="button" id="cart" class="green_btn green_btn-menu" data-title="Корзина">
+                <svg class="icon">
+                  <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mobile_menu_body">
+            <ul class="mobile_menu_list">
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Ванны</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Биде</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Душ</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Душевые уголки</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Поддоны</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Мебель для ванной</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Раковины</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Смесители</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Унитазы</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Инсталяции</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile_menu_item">
+                <a href="#" class="mobile_menu_link">
+                  <span class="menu_link_title">Аксессуары</span>
+                  <svg class="icon">
+                    <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <ul class="mobilePages">
+              <li class="mobilePage">
+                <a href="#" class="mobilePage__link">
+                  О компании
+                </a>
+              </li>
+              <li class="mobilePage">
+                <a href="#" class="mobilePage__link">
+                  Бренды
+                </a>
+              </li>
+              <li class="mobilePage">
+                <a href="#" class="mobilePage__link">
+                  Оплата и доставка
+                </a>
+              </li>
+              <li class="mobilePage">
+                <a href="#" class="mobilePage__link">
+                  Возврат и обмен
+                </a>
+              </li>
+              <li class="mobilePage">
+                <a href="#" class="mobilePage__link">
+                  Шоурум
+                </a>
+              </li>
+              <li class="mobilePage">
+                <a href="#" class="mobilePage__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+            <div class="mobile_callback_box">
+              <a href="tel:+74957216463" class="mobile_phone">+7 (495) 721-64-63</a>
+              <a href="#" class="feedback">Заказать звонок</a>
+              <div class="shedule_box">
+                <p class="shedule">
+                  (пн-пт - 10:00-19:00 <br />
+                  сб-вс - 11:00-17:00)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Шапка -->
+      <header class="header">
+            <div class="header_top">
+              <div class="wrapper">
+                <div class="header_top_inner">
+                  <div class="region">
+                    <span class="region__title">Ваш регион: </span>
+                    <span class="region__selectedRegion">Москва</span>
+                    <ul class="dropList">
+                      <li class="dropItem">
+                        <a href="#" class="dropItem__link"></a>
+                      </li>
+                      <li class="dropItem">
+                        <a href="#" class="dropItem__link"></a>
+                      </li>
+                      <li class="dropItem">
+                        <a href="#" class="dropItem__link"></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="pages">
+                    <ul class="pagesList">
+                      <li class="page">
+                        <a href="#" class="page__link">Шоурум</a>
+                      </li>
+                      <li class="page">
+                        <a href="#" class="page__link">Контакты</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header_mid">
+              <div class="wrapper clearfix">
+                <div class="header_mid_inner">
+                  <button type="button" class="drop_menu" id="drop_menu">
+                    <span class="divider"></span>
+                    <span class="divider"></span>
+                    <span class="divider"></span>
+                  </button>
+                  <div class="phone_box">
+                    <a href="tel:+74957216463" class="phone">+7(495)721-64-63</a>
+                  </div>
+                  <div class="shedule_box">
+                    <p class="shedule">
+                      (пн-пт - 10:00-19:00 <br />
+                      сб-вс - 11:00-17:00)
+                    </p>
+                    <a href="#" class="feedback">Заказать звонок</a>
+                  </div>
+                  <div class="logo_box">
+                    <a href="/" class="logo">
+                      <img src="images/logo.png" alt="logo" class="logo__img" />
+                      <img src="images/logo_mini.jpg" alt="logo" class="logo__miniImg" />
+                      <span class="logo__domain">-pro.ru</span>
+                    </a>
+                  </div>
+                  <div class="mobile_callback_box">
+                    <a href="tel:+74957216463" class="mobile_phone">+7 (495) 721-64-63</a>
+                    <a href="#" class="feedback">Заказать звонок</a>
+                  </div>
+                  <div class="header_tools_box">
+                    <button type="button" id="search" class="search" data-title="Поиск">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#serch-01" />
+                      </svg>
+                    </button>
+                    <button type="button" id="wishlist" class="green_btn wishlist" data-title="Желания">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#wish_icon-01" />
+                      </svg>
+                    </button>
+                    <button type="button" id="cart" class="green_btn cart" data-title="Корзина">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header_bottom">
+              <div class="wrapper">
+                <nav class="menu_block">
+                  <ul class="menuList">
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Ванны</a>
+                    </li>
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Биде</a>
+                    </li>
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Душ</a>
+                    </li>
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Душевые уголки</a>
+                    </li>
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Поддоны</a>
+                    </li>
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Мебель для ванной</a>
+                    </li>
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Раковины</a>
+                    </li>
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Смесители</a>
+                    </li>
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Унитазы</a>
+                    </li>
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Интсаляции</a>
+                    </li>
+                    <li class="menuItem">
+                      <a href="#" class="menuItem__link">Аксессуары</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+      </header>
+      <!-- // Шапка -->
+      <div class="content">
+        <div class="wrapper">
+          <!-- Секция категорий -->
+          <section class="category_section">
+            <div class="slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="slide swiper-slide">
+                    <img src="images/slide.jpg" alt="slide_img" class="slide__img" />
+                    <h3 class="slide__title">Душевой уголок cezares pratico r2</h3>
+                    <span class="slide__price">38 680₽</span>
+                    <a href="#" class="more_link">Подробнее</a>
+                </div>
+                <div class="slide swiper-slide">
+                    <img src="images/slide_2.jpg" alt="slide_img" class="slide__img" />
+                    <h3 class="slide__title">Душевой уголок cezares pratico r3</h3>
+                    <span class="slide__price">8 680₽</span>
+                    <a href="#" class="more_link">Подробнее</a>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="categories">
+              <h1 class="title">Итальянская сантехника премиум класса</h1>
+              <ul class="categories_list">
+                <li class="categoryItem">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+                <li class="categoryItem">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+                <li class="categoryItem">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+                <li class="categoryItem">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+                <li class="categoryItem middle_item">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image_midlle.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+                <li class="categoryItem long_item">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image_long.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+                <li class="categoryItem">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+                <li class="categoryItem">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+                <li class="categoryItem">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+                <li class="categoryItem middle_item">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image_midlle.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+                <li class="categoryItem">
+                    <h2 class="categoryItem__title">Ванны</h2>
+                    <a href="#" class="categoryItemLink">
+                      Ванны
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#arrow-01" />
+                      </svg>
+                    </a>
+                    <span class="categoryItem__price">от 8 680₽</span>
+                    <img src="images/cat_image.jpg" alt="cat_img" class="categoryItem__img" />
+                    <a href="#" class="more_link">Смотреть все</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- // Секция категорий -->
+          <!-- Секция товаров -->
+          <section class="products_section">
+            <h2 class="title">Самое популярное</h2>
+            <ul class="products_list">
+              <li class="product_item">
+                <div class="product">
+                  <span class="product__cat">Инсталяция</span>
+                  <img src="" alt="" class="product__specImg">
+                  <img src="images/product_image.jpg" alt="product_name" class="product__img">
+                  <div class="productInfo">
+                    <h4 class="productInfo__title">Унитаз cezres ZEN с подсветкой</h4>
+                    <p class="productInfo__desc">Коллекция GUIBILEO (Cezares, Италия)</p>
+                  </div>
+                  <div class="productCount">
+                    <span class="productCount__title">Клличество</span>
+                    <form action="" class="amountForm">
+                      <button type="button" class="amountForm__btn amountForm__btn-minus" id="minus">-</button>
+                      <input class="amountForm__amount" value="1" placeholder="1"/>
+                      <button type="button" class="amountForm__btn amountForm__btn-plus" id="plus">+</button>
+                    </form>
+                  </div>
+                  <div class="productPriceBox">
+                    <div class="price">
+                      <span class="price__old">9 680₽</span>
+                      <span class="price__new">7 680₽</span>
+                    </div>
+                    <button type="button" class="product__add">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                      в корзину
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product_item">
+                <div class="product">
+                  <span class="product__cat">Инсталяция</span>
+                  <img src="" alt="" class="product__specImg">
+                  <img src="images/product_image.jpg" alt="product_name" class="product__img">
+                  <div class="productInfo">
+                    <h4 class="productInfo__title">Унитаз cezres ZEN с подсветкой</h4>
+                    <p class="productInfo__desc">Коллекция GUIBILEO (Cezares, Италия)</p>
+                  </div>
+                  <div class="productCount">
+                    <span class="productCount__title">Клличество</span>
+                    <form action="" class="amountForm">
+                      <button type="button" class="amountForm__btn amountForm__btn-minus" id="minus">-</button>
+                      <input class="amountForm__amount" value="1" placeholder="1"/>
+                      <button type="button" class="amountForm__btn amountForm__btn-plus" id="plus">+</button>
+                    </form>
+                  </div>
+                  <div class="productPriceBox">
+                    <div class="price">
+                      <span class="price__old">9 680₽</span>
+                      <span class="price__new">7 680₽</span>
+                    </div>
+                    <button type="button" class="product__add">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                      в корзину
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product_item">
+                <div class="product">
+                  <span class="product__cat">Инсталяция</span>
+                  <img src="" alt="" class="product__specImg">
+                  <img src="images/product_image.jpg" alt="product_name" class="product__img">
+                  <div class="productInfo">
+                    <h4 class="productInfo__title">Унитаз cezres ZEN с подсветкой</h4>
+                    <p class="productInfo__desc">Коллекция GUIBILEO (Cezares, Италия)</p>
+                  </div>
+                  <div class="productCount">
+                    <span class="productCount__title">Клличество</span>
+                    <form action="" class="amountForm">
+                      <button type="button" class="amountForm__btn amountForm__btn-minus" id="minus">-</button>
+                      <input class="amountForm__amount" value="1" placeholder="1"/>
+                      <button type="button" class="amountForm__btn amountForm__btn-plus" id="plus">+</button>
+                    </form>
+                  </div>
+                  <div class="productPriceBox">
+                    <div class="price">
+                      <span class="price__old">9 680₽</span>
+                      <span class="price__new">7 680₽</span>
+                    </div>
+                    <button type="button" class="product__add">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                      в корзину
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product_item">
+                <div class="product">
+                  <span class="product__cat">Инсталяция</span>
+                  <img src="" alt="" class="product__specImg">
+                  <img src="images/product_image.jpg" alt="product_name" class="product__img">
+                  <div class="productInfo">
+                    <h4 class="productInfo__title">Унитаз cezres ZEN с подсветкой</h4>
+                    <p class="productInfo__desc">Коллекция GUIBILEO (Cezares, Италия)</p>
+                  </div>
+                  <div class="productCount">
+                    <span class="productCount__title">Клличество</span>
+                    <form action="" class="amountForm">
+                      <button type="button" class="amountForm__btn amountForm__btn-minus" id="minus">-</button>
+                      <input class="amountForm__amount" value="1" placeholder="1"/>
+                      <button type="button" class="amountForm__btn amountForm__btn-plus" id="plus">+</button>
+                    </form>
+                  </div>
+                  <div class="productPriceBox">
+                    <div class="price">
+                      <span class="price__old">9 680₽</span>
+                      <span class="price__new">7 680₽</span>
+                    </div>
+                    <button type="button" class="product__add">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                      в корзину
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product_item">
+                <div class="product">
+                  <span class="product__cat">Инсталяция</span>
+                  <img src="" alt="" class="product__specImg">
+                  <img src="images/product_image.jpg" alt="product_name" class="product__img">
+                  <div class="productInfo">
+                    <h4 class="productInfo__title">Унитаз cezres ZEN с подсветкой</h4>
+                    <p class="productInfo__desc">Коллекция GUIBILEO (Cezares, Италия)</p>
+                  </div>
+                  <div class="productCount">
+                    <span class="productCount__title">Клличество</span>
+                    <form action="" class="amountForm">
+                      <button type="button" class="amountForm__btn amountForm__btn-minus" id="minus">-</button>
+                      <input class="amountForm__amount" value="1" placeholder="1"/>
+                      <button type="button" class="amountForm__btn amountForm__btn-plus" id="plus">+</button>
+                    </form>
+                  </div>
+                  <div class="productPriceBox">
+                    <div class="price">
+                      <span class="price__old">9 680₽</span>
+                      <span class="price__new">7 680₽</span>
+                    </div>
+                    <button type="button" class="product__add">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                      в корзину
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product_item">
+                <div class="product">
+                  <span class="product__cat">Инсталяция</span>
+                  <img src="" alt="" class="product__specImg">
+                  <img src="images/product_image.jpg" alt="product_name" class="product__img">
+                  <div class="productInfo">
+                    <h4 class="productInfo__title">Унитаз cezres ZEN с подсветкой</h4>
+                    <p class="productInfo__desc">Коллекция GUIBILEO (Cezares, Италия)</p>
+                  </div>
+                  <div class="productCount">
+                    <span class="productCount__title">Клличество</span>
+                    <form action="" class="amountForm">
+                      <button type="button" class="amountForm__btn amountForm__btn-minus" id="minus">-</button>
+                      <input class="amountForm__amount" value="1" placeholder="1"/>
+                      <button type="button" class="amountForm__btn amountForm__btn-plus" id="plus">+</button>
+                    </form>
+                  </div>
+                  <div class="productPriceBox">
+                    <div class="price">
+                      <span class="price__old">9 680₽</span>
+                      <span class="price__new">7 680₽</span>
+                    </div>
+                    <button type="button" class="product__add">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                      в корзину
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product_item">
+                <div class="product">
+                  <span class="product__cat">Инсталяция</span>
+                  <img src="" alt="" class="product__specImg">
+                  <img src="images/product_image.jpg" alt="product_name" class="product__img">
+                  <div class="productInfo">
+                    <h4 class="productInfo__title">Унитаз cezres ZEN с подсветкой</h4>
+                    <p class="productInfo__desc">Коллекция GUIBILEO (Cezares, Италия)</p>
+                  </div>
+                  <div class="productCount">
+                    <span class="productCount__title">Клличество</span>
+                    <form action="" class="amountForm">
+                      <button type="button" class="amountForm__btn amountForm__btn-minus" id="minus">-</button>
+                      <input class="amountForm__amount" value="1" placeholder="1"/>
+                      <button type="button" class="amountForm__btn amountForm__btn-plus" id="plus">+</button>
+                    </form>
+                  </div>
+                  <div class="productPriceBox">
+                    <div class="price">
+                      <span class="price__old">9 680₽</span>
+                      <span class="price__new">7 680₽</span>
+                    </div>
+                    <button type="button" class="product__add">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                      в корзину
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product_item">
+                <div class="product">
+                  <span class="product__cat">Инсталяция</span>
+                  <img src="" alt="" class="product__specImg">
+                  <img src="images/product_image.jpg" alt="product_name" class="product__img">
+                  <div class="productInfo">
+                    <h4 class="productInfo__title">Унитаз cezres ZEN с подсветкой</h4>
+                    <p class="productInfo__desc">Коллекция GUIBILEO (Cezares, Италия)</p>
+                  </div>
+                  <div class="productCount">
+                    <span class="productCount__title">Клличество</span>
+                    <form action="" class="amountForm">
+                      <button type="button" class="amountForm__btn amountForm__btn-minus" id="minus">-</button>
+                      <input class="amountForm__amount" value="1" placeholder="1"/>
+                      <button type="button" class="amountForm__btn amountForm__btn-plus" id="plus">+</button>
+                    </form>
+                  </div>
+                  <div class="productPriceBox">
+                    <div class="price">
+                      <span class="price__old">9 680₽</span>
+                      <span class="price__new">7 680₽</span>
+                    </div>
+                    <button type="button" class="product__add">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                      в корзину
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product_item">
+                <div class="product">
+                  <span class="product__cat">Инсталяция</span>
+                  <img src="" alt="" class="product__specImg">
+                  <img src="images/product_image.jpg" alt="product_name" class="product__img">
+                  <div class="productInfo">
+                    <h4 class="productInfo__title">Унитаз cezres ZEN с подсветкой</h4>
+                    <p class="productInfo__desc">Коллекция GUIBILEO (Cezares, Италия)</p>
+                  </div>
+                  <div class="productCount">
+                    <span class="productCount__title">Клличество</span>
+                    <form action="" class="amountForm">
+                      <button type="button" class="amountForm__btn amountForm__btn-minus" id="minus">-</button>
+                      <input class="amountForm__amount" value="1" placeholder="1"/>
+                      <button type="button" class="amountForm__btn amountForm__btn-plus" id="plus">+</button>
+                    </form>
+                  </div>
+                  <div class="productPriceBox">
+                    <div class="price">
+                      <span class="price__old">9 680₽</span>
+                      <span class="price__new">7 680₽</span>
+                    </div>
+                    <button type="button" class="product__add">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                      в корзину
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="product_item">
+                <div class="product">
+                  <span class="product__cat">Инсталяция</span>
+                  <img src="" alt="" class="product__specImg">
+                  <img src="images/product_image.jpg" alt="product_name" class="product__img">
+                  <div class="productInfo">
+                    <h4 class="productInfo__title">Унитаз cezres ZEN с подсветкой</h4>
+                    <p class="productInfo__desc">Коллекция GUIBILEO (Cezares, Италия)</p>
+                  </div>
+                  <div class="productCount">
+                    <span class="productCount__title">Клличество</span>
+                    <form action="" class="amountForm">
+                      <button type="button" class="amountForm__btn amountForm__btn-minus" id="minus">-</button>
+                      <input class="amountForm__amount" value="1" placeholder="1"/>
+                      <button type="button" class="amountForm__btn amountForm__btn-plus" id="plus">+</button>
+                    </form>
+                  </div>
+                  <div class="productPriceBox">
+                    <div class="price">
+                      <span class="price__old">9 680₽</span>
+                      <span class="price__new">7 680₽</span>
+                    </div>
+                    <button type="button" class="product__add">
+                      <svg class="icon">
+                        <use class="icon__body" xlink:href="images/sprites/sprite.svg#cart_icon-01" />
+                      </svg>
+                      в корзину
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!-- // Секция товаров -->
+          <!-- Секция брендов -->
+          <section class="brands_section">
+            <h2 class="title">Бренды нашего магазина</h2>
+            <ul class="brands">
+              <li class="brand">
+                <a href="#" class="brandLink">
+                  <img src="images/brand.jpg" alt="brand_name" class="brand__img" />
+                </a>
+              </li>
+              <li class="brand">
+                <a href="#" class="brandLink">
+                  <img src="images/brand.jpg" alt="brand_name" class="brand__img" />
+                </a>
+              </li>
+              <li class="brand">
+                <a href="#" class="brandLink">
+                  <img src="images/brand.jpg" alt="brand_name" class="brand__img" />
+                </a>
+              </li>
+            </ul>
+          </section>
+          <!-- // Секция товаров -->
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
