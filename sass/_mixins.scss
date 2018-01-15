@@ -1,0 +1,128 @@
+@mixin flex()
+{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin justify($new, $old)
+{
+  -webkit-justify-content: $new;
+    -ms-flex-pack: $old;
+        justify-content: $new;
+}
+@mixin alignItems($new, $old)
+{
+  -webkit-box-align: $old;
+-webkit-align-items: $new;
+    -ms-flex-align: $old;
+        align-items: $new;
+}
+@mixin flexWrap()
+{
+  -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+@mixin columnDir()
+{
+  -webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
+}
+@mixin border-radius($deg)
+{
+  -webkit-border-radius: $deg;
+  border-radius: $deg;
+}
+@mixin transitionAll()
+{
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+@mixin transitionCustom($time, $type)
+{
+  -webkit-transition: $time + s $type;
+  -o-transition: $time + s $type;
+  transition: $time + s $type;
+}
+@mixin scale($val)
+{
+  -webkit-transform: scale($val);
+    -ms-transform: scale($val);
+        transform: scale($val);
+}
+@mixin mirror()
+{
+  -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+}
+@mixin rotater($deg)
+{
+  -webkit-transform: rotate($deg + deg);
+    -ms-transform: rotate($deg + deg);
+        transform: rotate($deg + deg);
+}
+@mixin centerMode()
+{
+  -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+@mixin centerY()
+{
+  -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+}
+@mixin centerX()
+{
+  -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+}
+@mixin translateClear()
+{
+  -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+        transform: translate(0,0);
+}
+@mixin customScreen($m_width)
+{
+  @media only screen and (max-width: $m_width + px)
+  {
+    @content;
+  }
+}
+@mixin desktop()
+{
+  @media only screen and (max-width: 1199px)
+  {
+    @content;
+  }
+}
+@mixin tabletHorizontal()
+{
+  @media only screen and (max-width: 991px)
+  {
+    @content;
+  }
+}
+@mixin tabletVertical()
+{
+  @media only screen and (max-width: 767px)
+  {
+    @content;
+  }
+}
+@mixin phone()
+{
+  @media only screen and (max-width: 479px)
+  {
+    @content;
+  }
+}

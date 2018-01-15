@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto/Roboto.woff2') format('woff2'),
+         url('../fonts/roboto/Roboto.woff') format('woff'),
+         url('../fonts/roboto/Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoThin';
+    src: local('Roboto Thin'), local('Roboto-Thin'),
+         url('../fonts/robotoThin/Robotothin.woff2') format('woff2'),
+         url('../fonts/robotoThin/Robotothin.woff') format('woff'),
+         url('../fonts/robotoThin/Robotothin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RobotoLight';
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/robotoLight/Robotolight.woff2') format('woff2'),
+         url('../fonts/robotoLight/Robotolight.woff') format('woff'),
+         url('../fonts/robotoLight/Robotolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BebasNeueBook';
+    src: url('../fonts/BebasNeueBook/BebasNeueBook.eot');
+    src: url('../fonts/BebasNeueBook/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BebasNeueBook/BebasNeueBook.woff2') format('woff2'),
+        url('BebasNeueBook.woff') format('woff'),
+        url('../fonts/BebasNeueBook/BebasNeueBook.ttf') format('truetype'),
+        url('../fonts/BebasNeueBook/BebasNeueBook.svg#BebasNeueBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
